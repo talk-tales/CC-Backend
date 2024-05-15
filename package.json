@@ -1,0 +1,22 @@
+{
+  "name": "talk-tales-backend",
+  "version": "1.0.0",
+  "description": "-",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talk-tales/CC-Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talk-tales/CC-Backend/issues"
+  },
+  "homepage": "https://github.com/talk-tales/CC-Backend#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
