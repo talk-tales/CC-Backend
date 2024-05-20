@@ -1,67 +1,37 @@
-<<<<<<< HEAD
+# Talk Tales API
 
-# API Documentation
+Backend untuk aplikasi TalkTalesyang dibuat dengan menggunakan ExpressJs.
 
-## Register User API
+## Installation
 
-Endpoint :  POST /api/users
+1. Clone repository ini
+2. Jalankan perintah `npm install`
+3. Jalankan database server MySQL
+4. Buat file `.env` dengan isi sesuai dengan contoh pada file `.env.example`
+5. Jalankan perintah `prisma db push` untuk melakukan migrasi database
+6. Jalankan perintah `npm start` untuk memulai server. Gunakan library `nodemon` untuk menjalankan server dan otomatis restart ketika file berubah
 
-Request Body :
+## Response Structure
 
-```json
-{ 
-  "username" : "ucup",
-  "email" : "ucup@gmail.com",
-  "password" : "rahasia"
-}
-```
-
-Response Body Success :
+Secara umum, format dari response pada setiap request adalah sebagai berikut
 
 ```json
 {
-  "data" : {
-    "username" : "ucup",
-    "email" : ""
-  }
+   success: true | false,
+   message: string | null,
+   data: object | null
 }
 ```
 
-Response Body Error :
+`success` berisi status apakah request berhasil dijalankan atau mendapatkan error.
 
-```json
-{
-  "errors" : "Username already registered"
-}
-```
+`message` berisi keterangan setia response yang diberikan, dapat juga berisi pesan error yang dapat ditampilkan ke user.
 
-## Login User API
+`data` adalah hasil dari request yang diminta.
 
-Endpoint : POST /api/users/login
+## Contributing
 
-Request Body :
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
 
-```json
-{
-  "email" : "ucup@gmail.com",
-  "password" : "rahasia"
-}
-```
-
-Response Body Success :
-
-```json
-{
-  "data" : {
-    "token" : "unique-token"
-  }
-}
-```
-
-Response Body Error :
-
-```json
-{
-  "errors" : "Username or password wrong"
-}
-```
+Please make sure to update tests as appropriate.

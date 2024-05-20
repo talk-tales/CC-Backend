@@ -1,29 +1,31 @@
 {
-  "name": "talk-tales-backend",
-  "version": "1.0.0",
-  "description": "-",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/talk-tales/CC-Backend.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/talk-tales/CC-Backend/issues"
-  },
-  "homepage": "https://github.com/talk-tales/CC-Backend#readme",
-  "dependencies": {
-    "@prisma/client": "^5.14.0",
-    "bcrypt": "^5.1.1",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "jsonwebtoken": "^9.0.2"
-  },
-  "devDependencies": {
-    "prisma": "^5.14.0"
-  }
+    "name": "talk-tales-backend",
+    "version": "1.0.0",
+    "description": "-",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "start:dev": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/talk-tales/CC-Backend.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/talk-tales/CC-Backend/issues"
+    },
+    "homepage": "https://github.com/talk-tales/CC-Backend#readme",
+    "dependencies": {
+        "@prisma/client": "^5.14.0",
+        "bcrypt": "^5.1.1",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "jsonwebtoken": "^9.0.2"
+    },
+    "devDependencies": {
+        "prisma": "^5.14.0"
+    }
 }
