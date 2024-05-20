@@ -1,0 +1,74 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String         @id @default(uuid())
+  nama         String         @db.VarChar(100)
+  password     String         @db.VarChar(100)
+  email        String         @unique @db.VarChar(100)
+  created_at   DateTime       @default(now())
+  updated_at   DateTime       @updatedAt
+  StoryPlayLog StoryPlayLog[]
+}
+
+model Story {
+  id                 Int                 @id @default(autoincrement())
+  title              String              @db.VarChar(100)
+  synopsis           String
+  thumbnail_url      String              @db.VarChar(100)
+  conversation_count Int
+  created_at         DateTime            @default(now())
+  updated_at         DateTime            @updatedAt
+  StoryConversation  StoryConversation[]
+  StoryPlayLog       StoryPlayLog[]
+}
+
+model StoryConversation {
+  id                   Int                    @id @default(autoincrement())
+  storyId              Int
+  Story                Story                  @relation(fields: [storyId], references: [id])
+  conv_sequence        Int
+  conv_text            String
+  character_img        String                 @db.VarChar(100)
+  characer_name        String                 @db.VarChar(100)
+  voice_url            String?                @db.VarChar(100)
+  is_speech_by_user    Boolean                @default(false)
+  created_at           DateTime               @default(now())
+  updated_at           DateTime               @updatedAt
+  StoryConversationLog StoryConversationLog[]
+}
+
+model StoryPlayLog {
+  id                   Int                    @id @default(autoincrement())
+  userId               String
+  storyId              Int
+  User                 User                   @relation(fields: [userId], references: [id])
+  Story                Story                  @relation(fields: [storyId], references: [id])
+  created_at           DateTime               @default(now())
+  updated_at           DateTime               @updatedAt
+  StoryConversationLog StoryConversationLog[]
+}
+
+model StoryConversationLog {
+  id                  Int               @id @default(autoincrement())
+  storyPlayLogId      Int
+  StoryPlayLog        StoryPlayLog      @relation(fields: [storyPlayLogId], references: [id])
+  storyConversationId Int
+  StoryConversation   StoryConversation @relation(fields: [storyConversationId], references: [id])
+  voice_url           String
+  voice_to_text       String?
+  feedback            String?
+  scores              Int
+}
