@@ -1,0 +1,13 @@
+services:
+    backend:
+        container_name: "talktales-backend"
+        env_file:
+            - ".env"
+        restart: always
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                - DB_URL=$DATABASE_URL
+        ports:
+            - "4000:4000"
