@@ -19,5 +19,3 @@
     - '--platform'
     - 'managed'
     - '--allow-unauthenticated'
-  images:
-  - 'gcr.io/$PROJECT_ID/backend-service:$COMMIT_SHA'
