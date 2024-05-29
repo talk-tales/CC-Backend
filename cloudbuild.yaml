@@ -1,7 +1,7 @@
  steps:
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/backend-service:$COMMIT_SHA', '--build-arg=DB_URL=$_DB_URL', '.']
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/backend-service:$COMMIT_SHA', '--build-arg=DB_URL=$_DB_URL,JWT_SECRET=$_JWT_SECRET', '.']
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/backend-service:$COMMIT_SHA']
@@ -21,3 +21,4 @@
     - '--allow-unauthenticated'
 substitutions:
     _DB_URL: 'mysql://username:password@localhost:3306/dbname' # default value
+    _JWT_SECRET: 'adadahuafuauafgauf'
