@@ -2,7 +2,7 @@
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
   env:
-    - 'DATABASE_URL=${_DATABASE_URL}'
+    - 'DATABASE_URL=${_DATABASE_URL}',
     - 'JWT_SECRET=${_JWT_SECRET}'
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/backend-service:$COMMIT_SHA', '.']
   # Push the container image to Container Registry
