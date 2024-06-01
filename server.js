@@ -2,7 +2,8 @@ const express = require("express");
 const authRoutes = require("./routes/auth");
 const authMiddleware = require("./middleware/auth.middleware");
 require("dotenv").config();
-const PORT = process.env.PORT || 3000;
+
+const PORT = process.env.PORT || 8080;
 const app = express();
 const storyRouter = require("./routes/story");
 

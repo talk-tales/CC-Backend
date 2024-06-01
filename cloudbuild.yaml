@@ -18,6 +18,6 @@
     - 'asia-southeast2'
     - '--platform'
     - 'managed'
+    - '--set-env-vars "DATABASE_URL=${_DATABASE_URL}"'
+    - '--set-env-vars "JWT_SECRET=${_JWT_SECRET}"'
     - '--allow-unauthenticated'
-  images:
-  - 'gcr.io/$PROJECT_ID/backend-service:$COMMIT_SHA'
