@@ -24,6 +24,7 @@
     - 'asia-southeast2'
     - '--platform'
     - 'managed'
+    - '--allow-unauthenticated'
 substitutions:
     _DATABASE_URL: 'mysql://username:password@localhost:3306/dbname' # default value
     _JWT_SECRET: 'adadahuafuauafgauf'
