@@ -1,7 +1,11 @@
 const prisma = require("../lib/prisma");
 
 const getAllStory = async () => {
-    return await prisma.story.findMany();
+    return await prisma.story.findMany({
+        include: {
+            Glosarium: true,
+        }
+    });
 };
 
 const getStoryById = async (storyId) => {
@@ -9,6 +13,9 @@ const getStoryById = async (storyId) => {
         where: {
             id: parseInt(storyId),
         },
+        include: {
+            Glosarium: true,
+        }
     });
 };
 
