@@ -1,7 +1,7 @@
 -- CreateTable
 CREATE TABLE `User` (
     `id` VARCHAR(191) NOT NULL,
-    `nama` VARCHAR(100) NOT NULL,
+    `name` VARCHAR(100) NOT NULL,
     `password` VARCHAR(100) NOT NULL,
     `email` VARCHAR(100) NOT NULL,
     `created_at` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
@@ -15,8 +15,9 @@ CREATE TABLE `User` (
 CREATE TABLE `Story` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `title` VARCHAR(100) NOT NULL,
-    `synopsis` VARCHAR(191) NOT NULL,
+    `synopsis` TEXT NOT NULL,
     `thumbnail_url` VARCHAR(100) NOT NULL,
+    `city` VARCHAR(100) NOT NULL,
     `conversation_count` INTEGER NOT NULL,
     `created_at` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `updated_at` DATETIME(3) NOT NULL,
@@ -64,6 +65,16 @@ CREATE TABLE `StoryConversationLog` (
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
+-- CreateTable
+CREATE TABLE `Glosarium` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `word` VARCHAR(100) NOT NULL,
+    `explanation` TEXT NOT NULL,
+    `story_id` INTEGER NOT NULL,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
 -- AddForeignKey
 ALTER TABLE `StoryConversation` ADD CONSTRAINT `StoryConversation_storyId_fkey` FOREIGN KEY (`storyId`) REFERENCES `Story`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
 
@@ -78,3 +89,6 @@ ALTER TABLE `StoryConversationLog` ADD CONSTRAINT `StoryConversationLog_storyPla
 
 -- AddForeignKey
 ALTER TABLE `StoryConversationLog` ADD CONSTRAINT `StoryConversationLog_storyConversationId_fkey` FOREIGN KEY (`storyConversationId`) REFERENCES `StoryConversation`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE `Glosarium` ADD CONSTRAINT `Glosarium_story_id_fkey` FOREIGN KEY (`story_id`) REFERENCES `Story`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;

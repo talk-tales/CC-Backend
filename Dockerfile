@@ -11,7 +11,7 @@ RUN npm install
 
 COPY . .
 
-RUN npx prisma migrate deploy
+# RUN npx prisma migrate deploy
 RUN npx prisma generate
 CMD ["node", "server.js"]
 EXPOSE 8080
