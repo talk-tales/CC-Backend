@@ -8,9 +8,10 @@ const app = express();
 const storyRouter = require("./routes/story");
 
 app.use(express.json());
-// app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
+
 app.use("/auth", authRoutes);
-app.use("/story", storyRouter);
+app.use("/story", authMiddleware, storyRouter);
 
 app.get("/testauth", authMiddleware, (req, res) => {
     res.send(req.user);
@@ -19,7 +20,6 @@ app.get("/testauth", authMiddleware, (req, res) => {
 app.get("/", (req, res) => {
     res.send("Hello Talk Tales!");
 });
-// routes
 
 app.listen(PORT, () => {
     console.log(`Server running at port : ${PORT}`);
