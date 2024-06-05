@@ -1,11 +1,7 @@
 const prisma = require("../lib/prisma");
 
 const getAllStory = async () => {
-    return await prisma.story.findMany({
-        include: {
-            Glosarium: true,
-        }
-    });
+    return await prisma.story.findMany();
 };
 
 const getStoryById = async (storyId) => {
