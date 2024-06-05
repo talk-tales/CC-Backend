@@ -29,6 +29,7 @@ model Story {
   title              String              @db.VarChar(100)
   synopsis           String              @db.Text
   thumbnail_url      String              @db.VarChar(100)
+  prolog_image_url   String              @db.VarChar(100)
   city               String              @db.VarChar(100)
   conversation_count Int
   created_at         DateTime            @default(now())
