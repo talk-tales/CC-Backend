@@ -34,9 +34,24 @@ const addStoryLog = async ({ storyId, userId }) => {
 };
 
 const postUserConversation = async ({ storyLogId, storyConvId }, fileAudio) => {
+    let getTargetLabel = await prisma.StoryConversation.findUnique({
+        where: {
+            id: storyConvId,
+        },
+        select: {
+            conv_text: true,
+        },
+    });
     //use model here
 
     //model end
+
+    let EXAMPLE_MODEL_RESPONSE = {
+        target_label: getTargetLabel.conv_text,
+        prediction: "test test test",
+        feedback: "Incorrect",
+        scores: 80,
+    };
     //save the result to database
     let postLog = await prisma.StoryConversationLog.create({
         data: {
@@ -51,13 +66,19 @@ const postUserConversation = async ({ storyLogId, storyConvId }, fileAudio) => {
                 },
             },
             voice_url: "",
-            voice_to_text: "test test test",
-            feedback: "Incorrect",
-            scores: 80,
+            voice_to_text: EXAMPLE_MODEL_RESPONSE.prediction,
+            feedback: EXAMPLE_MODEL_RESPONSE.feedback,
+            scores: EXAMPLE_MODEL_RESPONSE.scores,
         },
     });
 
-    return postLog;
+    return {
+        idLogConversation: postLog.id,
+        prediction: EXAMPLE_MODEL_RESPONSE.prediction,
+        target: EXAMPLE_MODEL_RESPONSE.target_label,
+        feedback: EXAMPLE_MODEL_RESPONSE.feedback,
+        scores: EXAMPLE_MODEL_RESPONSE.scores,
+    };
 };
 
 module.exports = {

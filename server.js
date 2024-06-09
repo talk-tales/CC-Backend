@@ -5,7 +5,6 @@ const convRoutes = require("./routes/conversation");
 const model = require("./lib/model");
 
 require("dotenv").config();
-let modelTensor;
 
 const PORT = process.env.PORT || 8080;
 const app = express();
@@ -31,15 +30,16 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, async () => {
-    console.log("Model not initialized, Initializing model...");
-    model
-        .loadModel()
-        .then((res) => {
-            console.log("Model is ready");
-            console.log(`Server running at port : ${PORT}`);
-        })
-        .catch((err) => {
-            console.log("Error Initializing model");
-            console.log(err);
-        });
+    console.log(`Server running at port : ${PORT}`);
+    // console.log("Model not initialized, Initializing model...");
+    // model
+    //     .loadModel()
+    //     .then((res) => {
+    //         console.log("Model is ready");
+    //         console.log(`Server running at port : ${PORT}`);
+    //     })
+    //     .catch((err) => {
+    //         console.log("Error Initializing model");
+    //         console.log(err);
+    //     });
 });
