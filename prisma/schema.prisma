@@ -31,7 +31,7 @@ model Story {
   thumbnail_url      String              @db.VarChar(100)
   prolog_image_url   String              @db.VarChar(100)
   city               String              @db.VarChar(100)
-  conversation_count Int
+  conversation_count Int                 @default(0)
   created_at         DateTime            @default(now())
   updated_at         DateTime            @updatedAt
   StoryConversation  StoryConversation[]
@@ -43,15 +43,18 @@ model StoryConversation {
   id                   Int                    @id @default(autoincrement())
   storyId              Int
   Story                Story                  @relation(fields: [storyId], references: [id])
+  prolog_text          String?                @db.Text
   conv_sequence        Int
-  conv_text            String
+  conv_text            String?
   character_img        String                 @db.VarChar(100)
-  characer_name        String                 @db.VarChar(100)
+  characer_name        String?                @db.VarChar(100)
   voice_url            String?                @db.VarChar(100)
   is_speech_by_user    Boolean                @default(false)
   created_at           DateTime               @default(now())
   updated_at           DateTime               @updatedAt
   StoryConversationLog StoryConversationLog[]
+
+  @@unique([storyId, conv_sequence], name: "conversationIdentifier")
 }
 
 model StoryPlayLog {
