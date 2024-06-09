@@ -2,7 +2,7 @@ const express = require("express");
 const authRoutes = require("./routes/auth");
 const authMiddleware = require("./middleware/auth.middleware");
 const convRoutes = require("./routes/conversation");
-const model = require("./lib/model");
+// const model = require("./lib/model");
 
 require("dotenv").config();
 
