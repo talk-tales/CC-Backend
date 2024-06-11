@@ -1,4 +1,5 @@
 const prisma = require("../lib/prisma");
+const { predict } = require("../lib/prediction");
 
 const getAllConversation = async (storyId) => {
     let data = await prisma.StoryConversation.findMany({
@@ -43,7 +44,7 @@ const postUserConversation = async ({ storyLogId, storyConvId }, fileAudio) => {
         },
     });
     //use model here
-
+    await predict(fileAudio);
     //model end
 
     let EXAMPLE_MODEL_RESPONSE = {
