@@ -22,7 +22,8 @@ let CONVERSATION_TIMUN_MAS = [
         conv_sequence: 0,
         conv_text:
             "Mbok Sirni, aku datang untuk mengambil Timun Mas. Janji adalah janji!",
-        character_img: "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/buto%20ijo.png",
+        character_img:
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/buto%20ijo.png",
         characer_name: "Raksasa",
         voice_url: "",
         is_speech_by_user: false,
@@ -33,7 +34,8 @@ let CONVERSATION_TIMUN_MAS = [
         prolog_text: null,
         conv_sequence: 1,
         conv_text: "Tolong, beri kami sedikit waktu lagi.",
-        character_img: "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/ibu.png",
+        character_img:
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/ibu.png",
         characer_name: "Mbok Sirni",
         voice_url: "",
         is_speech_by_user: true,
@@ -44,7 +46,8 @@ let CONVERSATION_TIMUN_MAS = [
         prolog_text: null,
         conv_sequence: 2,
         conv_text: "Tidak ada waktu lagi! Serahkan Timun Mas sekarang!",
-        character_img: "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/buto%20ijo.png",
+        character_img:
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/buto%20ijo.png",
         characer_name: "Raksasa",
         voice_url: "",
         is_speech_by_user: false,
@@ -57,7 +60,8 @@ let CONVERSATION_TIMUN_MAS = [
         conv_sequence: 3,
         conv_text:
             "Timun Mas, kau harus pergi sekarang! Ambil bungkusan ini. Di dalamnya ada benda-benda yang bisa menolongmu melarikan diri dari raksasa.",
-        character_img: "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/ibu.png",
+        character_img:
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/ibu.png",
         characer_name: "Mbok Sirni",
         voice_url: "",
         is_speech_by_user: true,
@@ -65,24 +69,30 @@ let CONVERSATION_TIMUN_MAS = [
     {
         id: 5,
         storyId: 1,
-        prolog_text:
-            "Timun Mas menerima bungkusan itu dan segera berlari ke hutan. Raksasa mengejarnya dengan langkah besar dan cepat. Saat raksasa hampir menangkapnya, Timun Mas membuka bungkusan dan melemparkan satu persatu benda di dalamnya",
+        prolog_text: `Timun Mas menerima bungkusan itu dan segera berlari ke hutan. Raksasa mengejarnya dengan langkah besar dan cepat. Saat raksasa hampir menangkapnya, Timun Mas membuka bungkusan dan melemparkan satu persatu benda di dalamnya
+            \n Pertama, ia melemparkan biji mentimun. Biji itu segera berubah menjadi ladang mentimun yang sangat lebat. Raksasa terhambat, tapi akhirnya ia berhasil melewati ladang mentimun itu.
+            \n Kemudian, Timun Mas melemparkan jarum. Jarum itu berubah menjadi pohon-pohon bambu yang sangat tinggi dan tajam. Raksasa kesulitan melewatinya, tapi akhirnya ia berhasil juga.
+            \n Lalu, Timun Mas melemparkan garam. Garam itu berubah menjadi lautan luas yang asin. Raksasa nyaris tenggelam, tapi dengan kekuatannya, ia berhasil melewati laut itu.
+            \n Akhirnya, Timun Mas melemparkan terasi. Terasi itu berubah menjadi danau lumpur yang mendidih. Raksasa terjebak di dalamnya dan tidak bisa keluar. Ia berteriak kesakitan dan akhirnya tenggelam dalam lumpur itu.
+            `,
         conv_sequence: 4,
         conv_text: null,
         character_img: "",
         characer_name: null,
         voice_url: "",
         is_speech_by_user: false,
+        is_mid: true,
     },
     {
         id: 6,
         storyId: 1,
         prolog_text:
-            "Pertama, ia melemparkan biji mentimun. Biji itu segera berubah menjadi ladang mentimun yang sangat lebat. Raksasa terhambat, tapi akhirnya ia berhasil melewati ladang mentimun itu.",
+            "Timun Mas selamat dan kembali ke rumahnya. Ia memeluk Mbok Sirni dengan erat.",
         conv_sequence: 5,
-        conv_text: null,
-        character_img: "",
-        characer_name: null,
+        conv_text: "Ibu, aku selamat!",
+        character_img:
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/timun%20mas.png",
+        characer_name: "Timun Mas",
         voice_url: "",
         is_speech_by_user: false,
     },
@@ -90,73 +100,16 @@ let CONVERSATION_TIMUN_MAS = [
         id: 7,
         storyId: 1,
         prolog_text:
-            "Kemudian, Timun Mas melemparkan jarum. Jarum itu berubah menjadi pohon-pohon bambu yang sangat tinggi dan tajam. Raksasa kesulitan melewatinya, tapi akhirnya ia berhasil juga.",
+            "Timun Mas dan Mbok Sirni pun hidup bahagia tanpa gangguan raksasa lagi.",
         conv_sequence: 6,
-        conv_text: null,
-        character_img: "",
-        characer_name: null,
-        voice_url: "",
-        is_speech_by_user: false,
-    },
-    {
-        id: 8,
-        storyId: 1,
-        prolog_text:
-            "Lalu, Timun Mas melemparkan garam. Garam itu berubah menjadi lautan luas yang asin. Raksasa nyaris tenggelam, tapi dengan kekuatannya, ia berhasil melewati laut itu.",
-        conv_sequence: 7,
-        conv_text: null,
-        character_img: "",
-        characer_name: null,
-        voice_url: "",
-        is_speech_by_user: false,
-    },
-    {
-        id: 9,
-        storyId: 1,
-        prolog_text:
-            "Akhirnya, Timun Mas melemparkan terasi. Terasi itu berubah menjadi danau lumpur yang mendidih. Raksasa terjebak di dalamnya dan tidak bisa keluar. Ia berteriak kesakitan dan akhirnya tenggelam dalam lumpur itu.",
-        conv_sequence: 8,
-        conv_text: null,
-        character_img: "",
-        characer_name: null,
-        voice_url: "",
-        is_speech_by_user: false,
-    },
-    {
-        id: 10,
-        storyId: 1,
-        prolog_text:
-            "Timun Mas selamat dan kembali ke rumahnya. Ia memeluk Mbok Sirni dengan erat.",
-        conv_sequence: 9,
-        conv_text: "Ibu, aku selamat!",
-        character_img: "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/timun%20mas.png",
-        characer_name: "Timun Mas",
-        voice_url: "",
-        is_speech_by_user: false,
-    },
-    {
-        id: 11,
-        storyId: 1,
-        prolog_text: null,
-        conv_sequence: 10,
         conv_text:
             "Syukurlah kau selamat, Timun Mas. Sekarang kita bisa hidup dengan tenang.",
-        character_img: "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/ibu.png",
+        character_img:
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/ibu.png",
         characer_name: "Mbok Sirni",
         voice_url: "",
         is_speech_by_user: true,
-    },
-    {
-        id: 12,
-        storyId: 1,
-        prolog_text:
-            "Timun Mas dan Mbok Sirni pun hidup bahagia tanpa gangguan raksasa lagi.",
-        conv_sequence: 11,
-        conv_text: null,
-        character_img: "",
-        characer_name: null,
-        voice_url: "",
-        is_speech_by_user: false,
+        is_postlog: true,
     },
 ];
 

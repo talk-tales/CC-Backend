@@ -50,6 +50,8 @@ model StoryConversation {
   characer_name        String?                @db.VarChar(100)
   voice_url            String?                @db.VarChar(100)
   is_speech_by_user    Boolean                @default(false)
+  is_mid               Boolean                @default(false)
+  is_postlog           Boolean                @default(false)
   created_at           DateTime               @default(now())
   updated_at           DateTime               @updatedAt
   StoryConversationLog StoryConversationLog[]
