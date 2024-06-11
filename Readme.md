@@ -1,8 +1,9 @@
 # Talk Tales API
+**Backend API for the TalkTales application utilized ExpressJs, Prisma ORM and Mysql.**
+## API Documentation
+    https://documenter.getpostman.com/view/26086126/2sA3XMhNgk
 
-Backend untuk aplikasi TalkTalesyang dibuat dengan menggunakan ExpressJs.
-
-## Installation
+## Installation locally
 
 1. Clone repository ini
 2. Jalankan perintah `npm install`
