@@ -6,6 +6,7 @@ const {
     GLOSARIUM_TIMUN_MAS,
     STORY_ONION_GARLIC,
     GLOSARIUM_ONION_GARLIC,
+    CONVERSATION_ONION_GARLIC,
 } = require("./seedData");
 
 async function main() {
@@ -32,6 +33,15 @@ async function main() {
         create: STORY_ONION_GARLIC,
     });
 
+    let insertConversationOnionGarli =
+        await prisma.StoryConversation.createMany({
+            data: CONVERSATION_ONION_GARLIC.map((data) => {
+                return {
+                    ...data,
+                };
+            }),
+        });
+
     let insertGlosariumOnionGarlic = await prisma.glosarium.createMany({
         data: GLOSARIUM_ONION_GARLIC,
     });
@@ -42,6 +52,7 @@ async function main() {
         insertGlosarium,
         insertOnionGarlic,
         insertGlosariumOnionGarlic,
+        insertConversationOnionGarli,
     });
 }
 main()

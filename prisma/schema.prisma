@@ -48,7 +48,7 @@ model StoryConversation {
   conv_text            String?
   character_img        String                 @db.VarChar(100)
   characer_name        String?                @db.VarChar(100)
-  voice_url            String?                @db.VarChar(100)
+  voice_url            String?                @db.VarChar(200)
   is_speech_by_user    Boolean                @default(false)
   is_mid               Boolean                @default(false)
   is_postlog           Boolean                @default(false)
