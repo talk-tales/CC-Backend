@@ -23,7 +23,7 @@ let CONVERSATION_TIMUN_MAS = [
         conv_text:
             "Mbok Sirni, I have come to take Timun Mas. A promise is a promise!",
         character_img:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/buto%20ijo.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/raksasa_kanan.png",
         characer_name: "Raksasa",
         voice_url:
             "https://storage.googleapis.com/bucket-assets-talk-tales/mp3/story-timun/raksasa-buto-ijo/Mbok-Sirni-I-have-come-t-2.mp3",
@@ -36,7 +36,7 @@ let CONVERSATION_TIMUN_MAS = [
         conv_sequence: 1,
         conv_text: "Please, give us a little more time.",
         character_img:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/ibu.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/mbok_sirni_kiri.png",
         characer_name: "Mbok Sirni",
         voice_url: "",
         is_speech_by_user: true,
@@ -48,7 +48,7 @@ let CONVERSATION_TIMUN_MAS = [
         conv_sequence: 2,
         conv_text: "No more time! Hand over Timun Mas now!",
         character_img:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/buto%20ijo.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/raksasa_kanan.png",
         characer_name: "Raksasa",
         voice_url:
             "https://storage.googleapis.com/bucket-assets-talk-tales/mp3/story-timun/raksasa-buto-ijo/No-more-time-Hand-over-T-1.mp3",
@@ -63,7 +63,7 @@ let CONVERSATION_TIMUN_MAS = [
         conv_text:
             "Timun Mas, you must leave now! Take this bundle. Inside are items that can help you escape from the raksasa.",
         character_img:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/ibu.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/mbok_sirni_kiri.png",
         characer_name: "Mbok Sirni",
         voice_url: "",
         is_speech_by_user: true,
@@ -358,7 +358,7 @@ let CONVERSATION_ONION_GARLIC = [
         conv_text:
             "Bawang Putih, quickly wash the clothes in the river! And don't come back until everything is clean!",
         character_img:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/ibu%20tiri.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/ibu_tiri_kanan.png",
         characer_name: "Ibu Tiri",
         voice_url:
             "https://storage.googleapis.com/bucket-assets-talk-tales/mp3/story-bawang/ibu-tiri/Bawang-Putih-quickly-was-1.mp3",
@@ -371,7 +371,7 @@ let CONVERSATION_ONION_GARLIC = [
         conv_sequence: 1,
         conv_text: "Yes, and also make sure dinner is ready when we get back!",
         character_img:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/bawang-merah.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/bw_merah_kiri.png",
         characer_name: "Bawang Merah",
         voice_url: "",
         is_speech_by_user: true,
@@ -385,7 +385,7 @@ let CONVERSATION_ONION_GARLIC = [
         conv_sequence: 2,
         conv_text: "Why do you look sad, my child?",
         character_img:
-            "https://storage.cloud.google.com/bucket-assets-talk-tales/assets-bawang/nenek.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/nenek_kanan.png",
         characer_name: "Nenek",
         voice_url:
             "https://storage.googleapis.com/bucket-assets-talk-tales/mp3/story-bawang/nenek/Why%20do%20you%20look%20sad%20my%20child.mp3",
@@ -398,7 +398,7 @@ let CONVERSATION_ONION_GARLIC = [
         conv_sequence: 3,
         conv_text:
             "I lost my mother's clothes, Grandma. If I go home without them, I'll be scolded.",
-        character_img: "",
+        character_img: "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/bw_putih_kiri.png",
         characer_name: "Bawang Putih",
         voice_url:
             "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/bawang-putih.png",
@@ -413,7 +413,7 @@ let CONVERSATION_ONION_GARLIC = [
         conv_text:
             "In that case, would you help me first? I will help you find the clothes.",
         character_img:
-            "https://storage.cloud.google.com/bucket-assets-talk-tales/assets-bawang/nenek.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/nenek_kanan.png",
         characer_name: "Nenek",
         voice_url:
             "https://storage.googleapis.com/bucket-assets-talk-tales/mp3/story-bawang/nenek/In%20that%20case%20would%20you%20help%20me%20first%20I%20will%20help%20you%20find%20the%20clothes.mp3",
@@ -428,7 +428,7 @@ let CONVERSATION_ONION_GARLIC = [
         conv_sequence: 5,
         conv_text: "Choose one of these gourds as a reward for helping me.",
         character_img:
-            "https://storage.cloud.google.com/bucket-assets-talk-tales/assets-bawang/nenek.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/nenek_kanan.png",
         characer_name: "Nenek",
         voice_url:
             "https://storage.googleapis.com/bucket-assets-talk-tales/mp3/story-bawang/nenek/Choose%20one%20of%20these%20gourds%20as%20a%20reward%20for%20helping%20me.mp3",
@@ -444,7 +444,7 @@ let CONVERSATION_ONION_GARLIC = [
         conv_sequence: 6,
         conv_text: "Why do you look sad, my child?",
         character_img:
-            "https://storage.cloud.google.com/bucket-assets-talk-tales/assets-bawang/nenek.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/nenek_kanan.png",
         characer_name: "Nenek",
         voice_url:
             "https://storage.googleapis.com/bucket-assets-talk-tales/mp3/story-bawang/nenek/Why%20do%20you%20look%20sad%20my%20child.mp3",
@@ -458,7 +458,7 @@ let CONVERSATION_ONION_GARLIC = [
         conv_text:
             "I lost my clothes. Hurry up and return them, I don't have time for this nonsense!",
         character_img:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/bawang-merah.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/bw_merah_kiri.png",
         characer_name: "Bawang merah",
         voice_url: "",
         is_speech_by_user: true,
@@ -472,7 +472,7 @@ let CONVERSATION_ONION_GARLIC = [
         conv_sequence: 8,
         conv_text: "Aaaaa! What happened?!",
         character_img:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/ibu%20tiri.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/ibu_tiri_kanan.png",
         characer_name: "Ibu Tiri",
         voice_url:
             "https://storage.googleapis.com/bucket-assets-talk-tales/mp3/story-bawang/ibu-tiri/Aaaaaaaaaa-What-happened-1.mp3",
@@ -486,7 +486,7 @@ let CONVERSATION_ONION_GARLIC = [
         conv_sequence: 9,
         conv_text: "How could this happen?!",
         character_img:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/bawang-merah.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/bw_merah_kiri.png",
         characer_name: "Bawang Merah",
         voice_url: "",
         is_speech_by_user: true,
