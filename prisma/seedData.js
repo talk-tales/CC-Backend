@@ -94,7 +94,7 @@ let CONVERSATION_TIMUN_MAS = [
         conv_sequence: 5,
         conv_text: "Mother, I am safe!",
         character_img:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/timun%20mas.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/timun_kanan.png",
         characer_name: "Timun Mas",
         voice_url:
             "https://storage.googleapis.com/bucket-assets-talk-tales/mp3/story-timun/timun-mas/Mother-I-am-safe-4.mp3",
@@ -109,7 +109,7 @@ let CONVERSATION_TIMUN_MAS = [
         conv_text:
             "Thank goodness you are safe, Timun Mas. Now we can live in peace.",
         character_img:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/ibu.png",
+            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/mbok_sirni_kiri.png",
         characer_name: "Mbok Sirni",
         voice_url: "",
         is_speech_by_user: true,
