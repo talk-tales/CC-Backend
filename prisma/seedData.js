@@ -2,9 +2,9 @@ let STORY_TIMUN_MAS = {
     id: 1,
     title: "Timun Mas",
     thumbnail_url:
-        "https://porto.sman1tjbarat.sch.id/img/timunmas/banner_HOME_timun_fix.png",
+        "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/banner_HOME_timun_fix.png",
     prolog_image_url:
-        "https://porto.sman1tjbarat.sch.id/img/timunmas/banner_prolog_TimunM_1000px%201.png",
+        "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/banner_prolog_TimunM_1000px%201.png",
     city: "Central Java",
     conversation_count: 12,
     synopsis: `Once upon a time, there lived an old widow named Mbok Sirni. She desperately wanted to have a child. One day, Mbok Sirni met an evil raksasa who gave her a cucumber seed. The raksasa said, "Plant this seed, and you will have a child. But remember, when the child turns 17, you must give her to me."
@@ -341,9 +341,9 @@ let STORY_ONION_GARLIC = {
             \n After a few years, Bawang Putih's biological mother fell ill and passed away. Bu Siti, now Bawang Putih's stepmother, began to show her true nature. She treated Bawang Putih very cruelly, while Bawang Merah became even more free to bully her stepsister.
                 `,
     thumbnail_url:
-        "https://porto.sman1tjbarat.sch.id/img/bawang/banner_HOME_bawang_fix%202.png",
+        "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/banner_HOME_bawang_fix%202.png",
     prolog_image_url:
-        "https://porto.sman1tjbarat.sch.id/img/bawang/banner_prolog_BawangMBP_1000px%201.png",
+        "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/banner_prolog_BawangMBP_1000px%201.png",
     city: "Riau",
     conversation_count: 0,
 };
