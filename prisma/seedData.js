@@ -401,7 +401,7 @@ let CONVERSATION_ONION_GARLIC = [
         character_img: "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/bw_putih_kiri.png",
         characer_name: "Bawang Putih",
         voice_url:
-            "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/bawang-putih.png",
+            "",
         is_speech_by_user: true,
     },
     {
