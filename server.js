@@ -3,7 +3,9 @@ const authRoutes = require("./routes/auth");
 const authMiddleware = require("./middleware/auth.middleware");
 const convRoutes = require("./routes/conversation");
 const prisma = require("./lib/prisma");
-// const model = require("./lib/model");
+const fs = require("fs");
+const path = require("path");
+const axios = require("axios");
 
 require("dotenv").config();
 
@@ -25,16 +27,6 @@ app.get("/testmodel", (req, res) => {
 app.get("/testauth", authMiddleware, (req, res) => {
     res.send(req.user);
 });
-
-app.post("/dataset", async (req, res) => {
-    let insert = await prisma.Dataset.create({
-        data: {
-            filename: req.body.filename,
-            label: req.body.label,
-        },
-    });
-    res.send(insert);
-});
 app.get("/dataset", async (req, res) => {
     let data = await prisma.Dataset.findMany({});
     res.send(data);
@@ -46,15 +38,4 @@ app.get("/", (req, res) => {
 
 app.listen(PORT, async () => {
     console.log(`Server running at port : ${PORT}`);
-    // console.log("Model not initialized, Initializing model...");
-    // model
-    //     .loadModel()
-    //     .then((res) => {
-    //         console.log("Model is ready");
-    //         console.log(`Server running at port : ${PORT}`);
-    //     })
-    //     .catch((err) => {
-    //         console.log("Error Initializing model");
-    //         console.log(err);
-    //     });
 });
