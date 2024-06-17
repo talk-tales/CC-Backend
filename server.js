@@ -2,6 +2,7 @@ const express = require("express");
 const authRoutes = require("./routes/auth");
 const authMiddleware = require("./middleware/auth.middleware");
 const convRoutes = require("./routes/conversation");
+const prisma = require("./lib/prisma");
 // const model = require("./lib/model");
 
 require("dotenv").config();
@@ -23,6 +24,20 @@ app.get("/testmodel", (req, res) => {
 });
 app.get("/testauth", authMiddleware, (req, res) => {
     res.send(req.user);
+});
+
+app.post("/dataset", async (req, res) => {
+    let insert = await prisma.Dataset.create({
+        data: {
+            filename: req.body.filename,
+            label: req.body.label,
+        },
+    });
+    res.send(insert);
+});
+app.get("/dataset", async (req, res) => {
+    let data = await prisma.Dataset.findMany({});
+    res.send(data);
 });
 
 app.get("/", (req, res) => {

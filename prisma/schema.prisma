@@ -89,3 +89,9 @@ model Glosarium {
   story_id    Int
   Story       Story  @relation(fields: [story_id], references: [id])
 }
+
+model Dataset {
+  id       Int    @id @default(autoincrement())
+  filename String
+  label    String @db.Text
+}
