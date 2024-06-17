@@ -1,15 +1,17 @@
 let STORY_TIMUN_MAS = {
     id: 1,
-    title: "Timun Mas",
+    title: "TIMUN MAS & BUTO IJO",
     thumbnail_url:
-        "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/banner_HOME_timun_fix.png",
+        // "https://porto.sman1tjbarat.sch.id/img/timunmas/banner_HOME_timun_fix.png",
+        "https://storage.googleapis.com/bucket-assets-talk-tales/home/HOME_timun.png",
     prolog_image_url:
-        "https://storage.googleapis.com/bucket-assets-talk-tales/assets-timun/banner_prolog_TimunM_1000px%201.png",
+    // "https://porto.sman1tjbarat.sch.id/img/timunmas/banner_prolog_TimunM_1000px%201.png",
+        "https://storage.googleapis.com/bucket-assets-talk-tales/home/prolog_TimunM.png",
     city: "Central Java",
     conversation_count: 12,
     synopsis: `Once upon a time, there lived an old widow named Mbok Sirni. She desperately wanted to have a child. One day, Mbok Sirni met an evil raksasa who gave her a cucumber seed. The raksasa said, "Plant this seed, and you will have a child. But remember, when the child turns 17, you must give her to me."
-    Mbok Sirni agreed and planted the cucumber seed. Several months later, a golden cucumber grew. When the cucumber was split open, inside it was a beautiful baby girl. Mbok Sirni named her Timun Mas.
-    Years passed, and Timun Mas grew into a kind and beautiful girl. However, Mbok Sirni was always worried because she remembered her promise to the raksasa.    
+    \n Mbok Sirni agreed and planted the cucumber seed. Several months later, a golden cucumber grew. When the cucumber was split open, inside it was a beautiful baby girl. Mbok Sirni named her Timun Mas.
+    \n Years passed, and Timun Mas grew into a kind and beautiful girl. However, Mbok Sirni was always worried because she remembered her promise to the raksasa.    
     `,
 };
 
@@ -341,9 +343,11 @@ let STORY_ONION_GARLIC = {
             \n After a few years, Bawang Putih's biological mother fell ill and passed away. Bu Siti, now Bawang Putih's stepmother, began to show her true nature. She treated Bawang Putih very cruelly, while Bawang Merah became even more free to bully her stepsister.
                 `,
     thumbnail_url:
-        "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/banner_HOME_bawang_fix%202.png",
+        // "https://porto.sman1tjbarat.sch.id/img/bawang/banner_HOME_bawang_fix%202.png",
+        "https://storage.googleapis.com/bucket-assets-talk-tales/home/HOME_bawang.png",
     prolog_image_url:
-        "https://storage.googleapis.com/bucket-assets-talk-tales/assets-bawang/banner_prolog_BawangMBP_1000px%201.png",
+        // "https://porto.sman1tjbarat.sch.id/img/bawang/banner_prolog_BawangMBP_1000px%201.png",
+        "https://storage.googleapis.com/bucket-assets-talk-tales/home/prolog_BawangMBP.png",
     city: "Riau",
     conversation_count: 0,
 };
