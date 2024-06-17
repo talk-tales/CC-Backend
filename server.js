@@ -32,6 +32,22 @@ app.get("/dataset", async (req, res) => {
     res.send(data);
 });
 
+app.post("/dataset", async (req, res) => {
+    try {
+        const file = req.body.filename;
+        const label = req.body.label;
+        let insert = await prisma.Dataset.create({
+            data: {
+                filename: file,
+                label: label,
+            },
+        });
+        res.status(200).send(insert);
+    } catch (error) {
+        res.status(500).send(`Failed to upload file: ${error.message}`);
+    }
+});
+
 app.get("/", (req, res) => {
     res.send("Hello Talk Tales!");
 });
